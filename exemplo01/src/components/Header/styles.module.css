@@ -1,0 +1,23 @@
+.container {
+  box-shadow: 0 5px 5px #eee;
+  padding: 20px;
+  display: flex;
+}
+
+.title {
+  font-family: 'bold';
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.navLink:first-of-type {
+  margin-left: auto;
+}
+
+.navLink img {
+  width: 24px;
+}
