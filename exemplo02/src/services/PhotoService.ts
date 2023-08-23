@@ -1,4 +1,5 @@
 import { createApi, SearchOrderBy } from 'unsplash-js'
+import { getPhoto, Photo } from '../models/Photo'
 
 const api = createApi({
   accessKey: `${process.env.REACT_APP_ACCESS_KEY}`,
@@ -14,12 +15,19 @@ export const searchPhotos = async (
     query,
     page,
     perPage: PER_PAGE,
+    //orientation: 'landscape',
     orderBy: criteria as SearchOrderBy,
   })
 
   //if(result.type === 'success')
   if (result.status === 200) {
     const { response } = result
-    response?.results.forEach((r: any) => console.log(r))
+
+    if (response) {
+      const photos: Photo[] = response.results.map((r: any) => getPhoto(r))
+      return photos
+    }
   }
+
+  return []
 }
