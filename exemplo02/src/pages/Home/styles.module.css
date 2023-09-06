@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .searchArea {
@@ -38,7 +39,8 @@
 }
 
 .resultsArea {
-  padding: 30px 20px;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }

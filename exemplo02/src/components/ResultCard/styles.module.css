@@ -6,6 +6,7 @@
   padding: 20px;
   margin-bottom: 30px;
   width: 22%;
+  box-sizing: border-box;
 }
 
 .cardThumb {

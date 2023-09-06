@@ -5,6 +5,9 @@ type Props = {
   photo: Photo
 }
 
+//const CHARACTERS_LIMIT = 30
+const WORDS_LIMIT = 10
+
 const ResultCard = ({ photo }: Props) => {
   return (
     <div className={styles.card}>
@@ -14,7 +17,12 @@ const ResultCard = ({ photo }: Props) => {
         alt={photo.description}
       />
 
-      <h3 className={styles.cardDescription}>{photo.description}</h3>
+      {photo.description && (
+        <h3 className={styles.cardDescription}>
+          {/* {`${photo.description.substring(0, CHARACTERS_LIMIT)}...`} */}
+          {`${photo.description.split(' ').slice(0, WORDS_LIMIT).join(' ')}...`}
+        </h3>
+      )}
     </div>
   )
 }
