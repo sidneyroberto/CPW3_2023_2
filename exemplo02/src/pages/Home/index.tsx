@@ -6,6 +6,7 @@ import { searchPhotos } from '../../services/PhotoService'
 import { PacmanLoader } from 'react-spinners'
 import ResultCard from '../../components/ResultCard'
 import { Result } from '../../models/Result'
+import searchIcon from '../../assets/img/search.png'
 
 const Home = () => {
   const [query, setQuery] = useState('')
@@ -48,6 +49,10 @@ const Home = () => {
         <button onClick={() => setPage(1)} className={styles.searchButton}>
           Pesquisar
         </button>
+
+        <button onClick={() => setPage(1)} className={styles.responsiveSearchButton}>
+          <img src={searchIcon} alt="Pesquisar" />
+        </button>
       </div>
 
       <PacmanLoader color='#fff' loading={loading} />
@@ -62,11 +67,11 @@ const Home = () => {
 
           <div>
             {page > 1 && (
-              <button onClick={() => setPage(page - 1)}>Anterior</button>
+              <button className={styles.pageButton} onClick={() => setPage(page - 1)}>Anterior</button>
             )}
-            <span>Página {page}</span>
+            <span className={styles.currentPageLabel} >Página {page}</span>
             {page < result.totalPages && (
-              <button onClick={() => setPage(page + 1)}>Próxima</button>
+              <button className={styles.pageButton}  onClick={() => setPage(page + 1)}>Próxima</button>
             )}
           </div>
         </>
