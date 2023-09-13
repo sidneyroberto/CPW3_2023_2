@@ -15,7 +15,8 @@ const Home = () => {
     photos: [],
     totalPages: 0,
   })
-  const [page, setPage] = useState(0)
+  const [page, setPage] = useState(1)
+  const [newSearch, isNewSearch] = useState(false)
 
   const searchResults = async () => {
     if (query.trim()) {
@@ -33,9 +34,18 @@ const Home = () => {
   }
 
   useEffect(() => {
-    console.log('Entrou no useEffect')
+    console.log('Entrou no useEffect 1')
     searchResults()
   }, [page])
+
+  useEffect(() => {
+    if(newSearch) {
+      console.log('Entrou no useEffect 2')
+      setPage(1)
+      searchResults()
+      isNewSearch(false)
+    }
+  }, [newSearch])
 
   return (
     <div className={styles.container}>
@@ -46,11 +56,11 @@ const Home = () => {
           type='text'
           className={styles.searchInput}
         />
-        <button onClick={() => setPage(1)} className={styles.searchButton}>
+        <button onClick={() => isNewSearch(true)} className={styles.searchButton}>
           Pesquisar
         </button>
 
-        <button onClick={() => setPage(1)} className={styles.responsiveSearchButton}>
+        <button onClick={() => isNewSearch(true)} className={styles.responsiveSearchButton}>
           <img src={searchIcon} alt="Pesquisar" />
         </button>
       </div>
