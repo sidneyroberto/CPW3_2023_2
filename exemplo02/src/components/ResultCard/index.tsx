@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom'
+
 import styles from './styles.module.css'
 import { Photo } from '../../models/Photo'
+
 
 type Props = {
   photo: Photo
@@ -34,11 +37,13 @@ const ResultCard = ({ photo }: Props) => {
 
   return (
     <div className={styles.card}>
-      <img
-        className={styles.cardThumb}
-        src={photo.thumbURL}
-        alt={photo.description}
-      />
+      <Link to='/view' state={{ photo }}>
+        <img
+          className={styles.cardThumb}
+          src={photo.thumbURL}
+          alt={photo.description}
+        />
+      </Link>
 
       {photo.description && (
         <h3 className={styles.cardDescription}>

@@ -1,34 +1,31 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 
 import styles from './styles.module.css'
 import { Photo } from '../../models/Photo'
 import { searchPhotos } from '../../services/PhotoService'
 import { PacmanLoader } from 'react-spinners'
 import ResultCard from '../../components/ResultCard'
-import { Result } from '../../models/Result'
 import searchIcon from '../../assets/img/search.png'
+import { UserContext } from '../../context/UserContext'
 
 const Home = () => {
-  const [query, setQuery] = useState('')
   const [loading, isLoading] = useState(false)
-  const [result, setResult] = useState<Result>({
-    photos: [],
-    totalPages: 0,
-  })
   const [page, setPage] = useState(1)
   const [newSearch, isNewSearch] = useState(false)
+
+  const {lastResult, setLastResult, query, setQuery} = useContext(UserContext)
 
   const searchResults = async () => {
     if (query.trim()) {
       console.log('Entrou')
       isLoading(true)
-      setResult({
+      setLastResult({
         photos: [],
         totalPages: 0,
       })
       const searchResult = await searchPhotos(query, 'relevant', page)
       console.log(searchResult)
-      setResult(searchResult)
+      setLastResult(searchResult)
       isLoading(false)
     }
   }
@@ -67,10 +64,10 @@ const Home = () => {
 
       <PacmanLoader color='#fff' loading={loading} />
 
-      {!loading && result.photos.length > 0 && (
+      {!loading && lastResult.photos.length > 0 && (
         <>
           <div className={styles.resultsArea}>
-            {result.photos.map((p: Photo) => (
+            {lastResult.photos.map((p: Photo) => (
               <ResultCard key={p.id} photo={p} />
             ))}
           </div>
@@ -80,7 +77,7 @@ const Home = () => {
               <button className={styles.pageButton} onClick={() => setPage(page - 1)}>Anterior</button>
             )}
             <span className={styles.currentPageLabel} >Página {page}</span>
-            {page < result.totalPages && (
+            {page < lastResult.totalPages && (
               <button className={styles.pageButton}  onClick={() => setPage(page + 1)}>Próxima</button>
             )}
           </div>
