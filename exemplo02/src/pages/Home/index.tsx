@@ -13,7 +13,7 @@ const Home = () => {
   const [page, setPage] = useState(1)
   const [newSearch, isNewSearch] = useState(false)
 
-  const {lastResult, setLastResult, query, setQuery} = useContext(UserContext)
+  const { lastResult, setLastResult, query, setQuery } = useContext(UserContext)
 
   const searchResults = async () => {
     if (query.trim()) {
@@ -36,7 +36,7 @@ const Home = () => {
   }, [page])
 
   useEffect(() => {
-    if(newSearch) {
+    if (newSearch) {
       console.log('Entrou no useEffect 2')
       setPage(1)
       searchResults()
@@ -53,12 +53,18 @@ const Home = () => {
           type='text'
           className={styles.searchInput}
         />
-        <button onClick={() => isNewSearch(true)} className={styles.searchButton}>
+        <button
+          onClick={() => isNewSearch(true)}
+          className={styles.searchButton}
+        >
           Pesquisar
         </button>
 
-        <button onClick={() => isNewSearch(true)} className={styles.responsiveSearchButton}>
-          <img src={searchIcon} alt="Pesquisar" />
+        <button
+          onClick={() => isNewSearch(true)}
+          className={styles.responsiveSearchButton}
+        >
+          <img src={searchIcon} alt='Pesquisar' />
         </button>
       </div>
 
@@ -74,11 +80,23 @@ const Home = () => {
 
           <div>
             {page > 1 && (
-              <button className={styles.pageButton} onClick={() => setPage(page - 1)}>Anterior</button>
+              <button
+                className={styles.pageButton}
+                onClick={() => setPage(page - 1)}
+              >
+                Anterior
+              </button>
             )}
-            <span className={styles.currentPageLabel} >Página {page}</span>
+            <span className={styles.currentPageLabel}>
+              Página {page} de {lastResult.totalPages}
+            </span>
             {page < lastResult.totalPages && (
-              <button className={styles.pageButton}  onClick={() => setPage(page + 1)}>Próxima</button>
+              <button
+                className={styles.pageButton}
+                onClick={() => setPage(page + 1)}
+              >
+                Próxima
+              </button>
             )}
           </div>
         </>
