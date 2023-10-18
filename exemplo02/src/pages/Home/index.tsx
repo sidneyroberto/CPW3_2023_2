@@ -94,7 +94,13 @@ const Home = () => {
                 Anterior
               </button>
             )}
+<<<<<<< HEAD
             <span className={styles.currentPageLabel}>Página {page}</span>
+=======
+            <span className={styles.currentPageLabel}>
+              Página {page} de {lastResult.totalPages}
+            </span>
+>>>>>>> fe46ae9d181f9b3f10e106bcf258338e3568eb7f
             {page < lastResult.totalPages && (
               <button
                 className={styles.pageButton}
