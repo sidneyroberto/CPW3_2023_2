@@ -1,4 +1,4 @@
-import { createApi, SearchOrderBy } from 'unsplash-js'
+import { createApi, SearchOrderBy, Orientation } from 'unsplash-js'
 import { getPhoto, Photo } from '../models/Photo'
 import { Result } from '../models/Result'
 
@@ -10,13 +10,14 @@ const PER_PAGE = 16
 export const searchPhotos = async (
   query: string,
   criteria: string,
+  orientation: Orientation,
   page: number
 ) => {
   const result = await api.search.getPhotos({
     query,
     page,
     perPage: PER_PAGE,
-    //orientation: 'landscape',
+    orientation: orientation,
     orderBy: criteria as SearchOrderBy,
   })
 

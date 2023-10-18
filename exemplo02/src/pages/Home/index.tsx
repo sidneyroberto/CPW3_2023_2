@@ -7,13 +7,15 @@ import { PacmanLoader } from 'react-spinners'
 import ResultCard from '../../components/ResultCard'
 import searchIcon from '../../assets/img/search.png'
 import { UserContext } from '../../context/UserContext'
+import { Orientation } from 'unsplash-js'
 
 const Home = () => {
   const [loading, isLoading] = useState(false)
   const [page, setPage] = useState(1)
   const [newSearch, isNewSearch] = useState(false)
+  const [orientation, setOrientation] = useState<Orientation>('landscape')
 
-  const {lastResult, setLastResult, query, setQuery} = useContext(UserContext)
+  const { lastResult, setLastResult, query, setQuery } = useContext(UserContext)
 
   const searchResults = async () => {
     if (query.trim()) {
@@ -23,7 +25,12 @@ const Home = () => {
         photos: [],
         totalPages: 0,
       })
-      const searchResult = await searchPhotos(query, 'relevant', page)
+      const searchResult = await searchPhotos(
+        query,
+        'relevant',
+        orientation,
+        page
+      )
       console.log(searchResult)
       setLastResult(searchResult)
       isLoading(false)
@@ -36,7 +43,7 @@ const Home = () => {
   }, [page])
 
   useEffect(() => {
-    if(newSearch) {
+    if (newSearch) {
       console.log('Entrou no useEffect 2')
       setPage(1)
       searchResults()
@@ -53,12 +60,18 @@ const Home = () => {
           type='text'
           className={styles.searchInput}
         />
-        <button onClick={() => isNewSearch(true)} className={styles.searchButton}>
+        <button
+          onClick={() => isNewSearch(true)}
+          className={styles.searchButton}
+        >
           Pesquisar
         </button>
 
-        <button onClick={() => isNewSearch(true)} className={styles.responsiveSearchButton}>
-          <img src={searchIcon} alt="Pesquisar" />
+        <button
+          onClick={() => isNewSearch(true)}
+          className={styles.responsiveSearchButton}
+        >
+          <img src={searchIcon} alt='Pesquisar' />
         </button>
       </div>
 
@@ -74,11 +87,21 @@ const Home = () => {
 
           <div>
             {page > 1 && (
-              <button className={styles.pageButton} onClick={() => setPage(page - 1)}>Anterior</button>
+              <button
+                className={styles.pageButton}
+                onClick={() => setPage(page - 1)}
+              >
+                Anterior
+              </button>
             )}
-            <span className={styles.currentPageLabel} >Página {page}</span>
+            <span className={styles.currentPageLabel}>Página {page}</span>
             {page < lastResult.totalPages && (
-              <button className={styles.pageButton}  onClick={() => setPage(page + 1)}>Próxima</button>
+              <button
+                className={styles.pageButton}
+                onClick={() => setPage(page + 1)}
+              >
+                Próxima
+              </button>
             )}
           </div>
         </>
