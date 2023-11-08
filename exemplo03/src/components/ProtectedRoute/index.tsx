@@ -8,10 +8,9 @@ type Props = {
 }
 
 const ProtectedRoute = ({ children }: Props) => {
-  const { token } = useContext(UserContext)
+  const { isSessionValid } = useContext(UserContext)
 
-  // FALHA CATASTRÓFICA DE SEGURANÇA!!!
-  if (token) {
+  if (isSessionValid()) {
     return children
   }
 

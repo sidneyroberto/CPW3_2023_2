@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { UserCredential, createUserWithEmailAndPassword } from 'firebase/auth'
 import { Link } from 'react-router-dom'
 
-import styles from './styles.module.css'
+import styles from '../../globals.module.css'
 import { auth } from '../../config/firebase'
 
 
@@ -28,8 +28,6 @@ const CreateUser = () => {
             setEmail('')
             setPassword('')
             setPasswordConfirm('')
-            // const form = document.querySelector('form') as HTMLFormElement
-            // form.reset()
           })
           .catch((error: any) => {
             console.log(error)

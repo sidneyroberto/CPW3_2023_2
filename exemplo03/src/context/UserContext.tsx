@@ -1,13 +1,19 @@
 import { ReactNode, createContext, useState } from 'react'
 
 type UserType = {
-  token: string
-  setToken: (newState: string) => void
+  authTime: number,
+  exp: number
+  setAuthTime: (newState: number) => void,
+  setExp: (newState: number) => void,
+  isSessionValid: () => boolean
 }
 
 const initialValue: UserType = {
-  token: '',
-  setToken: () => { }
+  authTime: 0,
+  exp: 0,
+  setAuthTime: () => { },
+  setExp: () => { },
+  isSessionValid: () => false
 }
 
 export const UserContext = createContext(initialValue)
@@ -18,7 +24,19 @@ type UserContextProps = {
 
 export const UserContextProvider =
   ({ children }: UserContextProps) => {
-    const [token, setToken] = useState(initialValue.token)
+    const [authTime, setAuthTime] = useState(initialValue.authTime)
+    const [exp, setExp] = useState(initialValue.exp)
 
-    return <UserContext.Provider value={{ token, setToken }}>{children}</UserContext.Provider>
+    return <UserContext.Provider value={{
+      authTime,
+      exp,
+      setAuthTime,
+      setExp,
+      isSessionValid: () => {
+        const timestamp = new Date().getTime()
+        const diff = exp * 1000 - timestamp
+        console.log(timestamp, exp, diff)
+        return diff > 0
+      }
+    }}>{children}</UserContext.Provider>
   }
