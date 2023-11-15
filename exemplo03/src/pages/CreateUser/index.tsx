@@ -90,6 +90,8 @@ const CreateUser = () => {
           <h3 className={styles.errorCard}>{message}</h3>
         )}
       </div>
+
+      <Link to='/' className={styles.button}>Voltar</Link>
     </div>
   )
 }

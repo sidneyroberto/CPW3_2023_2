@@ -42,7 +42,7 @@
   font-family: 'regular';
 }
 
-.loginForm input[type=submit] {
+.loginForm input[type=submit], .button {
   cursor: pointer;
   background-color: #555;
   color: white;
@@ -51,6 +51,11 @@
   padding: 10px 0;
   border: none;
   width: 150px;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
 }
 
 .messagesArea {

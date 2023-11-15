@@ -13,3 +13,5 @@ const firebaseConfig = {
 
 const firebaseApp = initializeApp(firebaseConfig)
 export const auth = getAuth(firebaseApp)
+auth.languageCode = 'pt-br'
+//auth.useDeviceLanguage()

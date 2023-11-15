@@ -35,7 +35,6 @@ export const UserContextProvider =
       isSessionValid: () => {
         const timestamp = new Date().getTime()
         const diff = exp * 1000 - timestamp
-        console.log(timestamp, exp, diff)
         return diff > 0
       }
     }}>{children}</UserContext.Provider>
