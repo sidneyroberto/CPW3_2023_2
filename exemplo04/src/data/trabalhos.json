@@ -1,0 +1,331 @@
+{
+  "works": [
+    {
+      "code": "CAE-01",
+      "title": "ANÁLISE MECÂNICA DA ADIÇÃO DE SACAROSE NO CONCRETO - FASE 2",
+      "authors": [
+        "Robervan Alves de Araujo",
+        "Munique Silva de Lima",
+        "Gustavo Silva Filgueiras",
+        "Beatriz da Silva Nogueira",
+        "Willersson da Silva Braga"
+      ]
+    },
+    {
+      "code": "CAE-03",
+      "title": "AUDIOVISION: UMA SOLUÇÃO DE VISÃO COMPUTACIONAL PARA PESSOAS COM DEFICIÊNCIA VISUAL",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Abelardo Palácios Ribeiro",
+        "Fernando Gabriel Satolo Quelho",
+        "Pedro do Amaral"
+      ]
+    },
+    {
+      "code": "CAE-04",
+      "title": "AUTOMATIZAÇÃO DE UM SISTEMA DE IRRIGAÇÃO UTILIZANDO A PLATAFORMA DE PROTOTIPAGEM ARDUINO",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Ana Julia Costa Moraes",
+        "Kawã Silva",
+        "Milleni Souza Mendes"
+      ]
+    },
+    {
+      "code": "CAE-05",
+      "title": "CHOCADEIRA AUTOMATIZADA COM MONITORAMENTO VIA APLICATIVO DE CELULAR",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Ana Julia Costa Moraes",
+        "Maria Eduarda de Sá Cavalcanti"
+      ]
+    },
+    {
+      "code": "CAE-06",
+      "title": "EXPERIMENTOS FÍSICOS EM PEÇAS HIDRÁULICAS DISTRIBUIÇÃO DE ÁGUA - FASE 2",
+      "authors": [
+        "Robervan Alves de Araujo",
+        "Pedro Henrique Ximenes Barbier Araújo",
+        "Emilio Rafael Bueno da Silva Paiva",
+        "Giovanna Ocampos Jara"
+      ]
+    },
+    {
+      "code": "CAE-07",
+      "title": "MAQUETES DE RESIDÊNCIAS COM USO DA IMPRESSORA 3D",
+      "authors": ["Milene Santos Estrella", "Pedro Lucas Land"]
+    },
+    {
+      "code": "CAE-08",
+      "title": "SISTEMA TECNOLÓGICO DE BAIXO CUSTO PARA DETECÇÃO DE INCÊNDIOS",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Vitória Lorramy Morais dos Santos",
+        "Maria Eduarda Nogueira de Queiroz Garcia"
+      ]
+    },
+    {
+      "code": "CAE-09",
+      "title": "UMA PROPOSTA DE INTERVENÇÃO PEDAGÓGICA COM O USO DAS METODOLOGIAS ATIVAS NO PROCESSO DE ENSINO E APRENDIZAGEM",
+      "authors": [
+        "Gisele Santos Estrella",
+        "Julia Franscisco Da Cunha",
+        "Fernanda Thiry",
+        "Camila Dos Santos Antunes",
+        "Miguel Teodoreto Da Costa Neto",
+        "Ana Maria De Almeira Costa"
+      ]
+    },
+    {
+      "code": "CBS-01",
+      "title": "CATALOGANDO AVENTURAS CLASSIFICANDO ÁRVORES E VEGETAÇÃO DA TRILHA DO ELY – ESTRADA PARQUE PIRAPUTANGA",
+      "authors": [
+        "Pablo Teixeira Salomão",
+        "Aghatta Alegre Bakarge Valensuela",
+        "Isabella Cacho dos Santos"
+      ]
+    },
+    {
+      "code": "CBS-02",
+      "title": "DISPOSITIVO DE AFUGENTAMENTO DE POMBOS UTILIZANDO UM SISTEMA TECNOLÓGICO",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Maria Eduarda de Sá Cavalcanti",
+        "Maria Clara Alves Xavier",
+        "Rayane de Oliveira Lopes"
+      ]
+    },
+    {
+      "code": "CBS-03",
+      "title": "EFEITOS DO TREINAMENTO DE SLACKLINE NA MELHORIA DAS QUALIDADES FÍSICAS BÁSICAS EM MENINAS DO PROJETO CATALOGANDO AVENTURAS",
+      "authors": [
+        "Pablo Teixeira Salomão",
+        "Ana Júlia Costa Moraes",
+        "Melissa Arias Estefani",
+        "Vitória Lorrany Morais dos Santos"
+      ]
+    },
+    {
+      "code": "CET-01",
+      "title": "A OCUPAÇÃO URBANA NAS MARGENS DOS RIOS: ANASTÁCIO E AQUIDAUANA E A DINÂMICA DE INUNDAÇÃO DO RIO AQUIDAUANA",
+      "authors": [
+        "Denilson Rocha dos Santos",
+        "Simone Marques dos Santos Ribeiro",
+        "Ana Gabrielly Chaves dos Santos",
+        "Ariadny Santos Camilo",
+        "Bruna Oliveira Vilalba",
+        "Isadora Vargas Lacerda",
+        "Julia Laís Carvalho de Amorim"
+      ]
+    },
+    {
+      "code": "CET-02",
+      "title": "DESENVOLVENDO UM JOGO DE TABULEIRO SOBRE A CRISE CLIMÁTICA",
+      "authors": [
+        "Lígia Parreira de Souza",
+        "Marcos Flávio de Oliveira Silva",
+        "Ingryd Correia Pessoal do Amaral",
+        "Sara Garcia Alves",
+        "Paulo Andrey Neves Silva"
+      ]
+    },
+    {
+      "code": "CET-03",
+      "title": "IARA – INTELIGÊNCIA ARTIFICIAL EM RIOS PARA PREVISÃO DE ALAGAMENTOS",
+      "authors": [
+        "Marcia Ferreira Cristaldo",
+        "Sidney Roberto de Sousa",
+        "Julia Figueiredo Silva",
+        "Marcella Hernandes de Souza",
+        "Maria Eduarda Pereira Dau de Lima"
+      ]
+    },
+    {
+      "code": "CET-04",
+      "title": "PRODUÇÃO DE UM KIT EXPERIMENTAL PARA MEDIÇÃO DE CAMPOS MAGNÉTICOS",
+      "authors": ["Lígia Parreira de Souza", "Letícia da Silva Parreira"]
+    },
+    {
+      "code": "CET-05",
+      "title": "SISTEMA AUTOMÁTICO PARA ABERTURA DE PORTAS COM RFID",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Bianca Oruê Diogo",
+        "Bruna Reges Ferreira",
+        "Leonardo Soares Duarte"
+      ]
+    },
+    {
+      "code": "CET-06",
+      "title": "SISTEMAS ELETRÔNICOS COM ARDUINO PARA O ENSINO PRÁTICO DE CONCEITOS DA FÍSICA",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Diogo Gill Cardoso",
+        "Breno Pereira Corrêa",
+        "Raí Daniel Moura de Assis"
+      ]
+    },
+    {
+      "code": "CET-07",
+      "title": "SOFTWARE PARA PESAGEM DE ALEVINOS DE PINTADO REAL®",
+      "authors": [
+        "Leandro Magalhães de Oliveira",
+        "Marcio Carneiro Brito Pache",
+        "Fernando Gabriel Satolo Quelho"
+      ]
+    },
+    {
+      "code": "CHSAL-01",
+      "title": "A PROBLEMÁTICA AMBIENTAL DAS CHEIAS NO NÚCLEO URBANO DE AQUIDAUANA: UMA DISCUSSÃO SOBRE O FOCO DA HISTÓRIA ORAL",
+      "authors": [
+        "Sintya de Santis Ascencio",
+        "Gladson Eduard Moreira Flor",
+        "Leo Cézar Ascencio da Costa",
+        "Helen Caciraghi Caobianco di Santi"
+      ]
+    },
+    {
+      "code": "CHSAL-02",
+      "title": "DESENVOLVIMENTO DE UM ACERVO DE AUDIOBOOKS LITERÁRIOS PARA DEFICIENTES VISUAIS E UM APLICATIVO PARA A SUA EXECUÇÃO",
+      "authors": [
+        "Sidney Roberto de Sousa",
+        "Wilquer Quadros dos Santos",
+        "Wilkler Garcia Magalhães",
+        "Gabriel Lordano da Silva",
+        "Luiza Azevedo de Menezes",
+        "Mariana da Cruz Ruiz"
+      ]
+    },
+    {
+      "code": "CHSAL-03",
+      "title": "“FLORESTA DOCE”: UMA ADAPTAÇÃO DA OBRA “IRACEMA”",
+      "authors": [
+        "Carlos Eduardo Henrique da Cruz",
+        "Gabriely Oliveira Eustáquio",
+        "Rogério Rodrigues Benevides Filho",
+        "Vitória Manoela Arguelho da Silva"
+      ]
+    },
+    {
+      "code": "CHSAL-04",
+      "title": "MARIA PEREIRA: A VOZ FEMININA DE DÓRIS MENDES TRINDADE EM AQUIDAUANA/MS",
+      "authors": [
+        "Jessica dos Santos Paião",
+        "Lise Rossi Jones Lima",
+        "Ana Beatriz da Silva Luzardo",
+        "Custódia Valderina Carvalho da Silva",
+        "Geandra Francielle Eloisa Lopes",
+        "Raul Gomes da Silva"
+      ]
+    },
+    {
+      "code": "CHSAL-05",
+      "title": "O LUGAR DA LÍNGUA ESPANHOLA NOS INSTITUTOS FEDERAIS DA REGIÃO CENTRO-OESTE: ANÁLISE DOS DADOS",
+      "authors": [
+        "Jessica dos Santos Paião",
+        "Júlia Letícia Teodózio Jaques",
+        "Kauany Alves Rocha",
+        "Ana Clara de Jesus Miranda",
+        "Giovana Drews de Medeiros"
+      ]
+    },
+    {
+      "code": "CHSAL-06",
+      "title": "O NÚCLEO URBANO DE AQUIDAUANA E A IMPORTÂNCIA DA RELIGIOSIDADE NO PROCESSO DE FORMAÇÃO DA SOCIEDADE-1892-2022-. ATRAVÉS DE ENTREVISTAS.",
+      "authors": [
+        "Sintya de Santis Ascencio",
+        "Lívia Helena Niz Benzoni",
+        "Fabiane do Viso Brito",
+        "Mirella Araújo de Oliveira Massa"
+      ]
+    },
+    {
+      "code": "CHSAL-07",
+      "title": "ORIENTA IFMS: IMPLEMENTAÇÃO DE MAPA TÁTIL DO CAMPUS AQUIDAUANA",
+      "authors": [
+        "Camila Ramos Arias",
+        "Ester Cintra Eloi",
+        "Sara Garcia Alves",
+        "Izadora Ramos de Lima"
+      ]
+    },
+    {
+      "code": "CHSAL-08",
+      "title": "PARA ALÉM DO INGRESSO: O ACESSO E A PERMANÊNCIA DE ESTUDANTES DA VILA PINHEIRO NO IFMS CAMPUS AQUIDAUANA",
+      "authors": [
+        "Jessica dos Santos Paião",
+        "Débora Rogéria Neres de Souza Garcia",
+        "Ana Clara de Jesus Miranda",
+        "Lucas Carvalho Mariani",
+        "Pedro Henrique dos Santos Correa"
+      ]
+    },
+    {
+      "code": "CHSAL-09",
+      "title": "SELEÇÃO DE LIXOS ELETRÔNICOS ATRAVÉS DE UM APLICATIVO PARA DISPOSITIVOS MÓVEIS",
+      "authors": [
+        "Vinícius de Araújo Maeda",
+        "Anna Beatriz Sampaio de Medeiros",
+        "Sophia Bambil Silva Bossay"
+      ]
+    },
+    {
+      "code": "MDIS-01",
+      "title": "AS CONSEQUÊNCIAS DA OCUPAÇÃO ANTRÓPICA AO LONGO DAS MARGENS DO CÓRREGO JOÃO DIAS NO NÚCLEO URBANO DE AQUIDAUANA-MS.",
+      "authors": [
+        "Sintya de Santis Ascencio",
+        "Carolina Silva Peixoto",
+        "Marcela Portes de Souza Santos",
+        "Otávio Henrique Feldens"
+      ]
+    },
+    {
+      "code": "MDIS-02",
+      "title": "GAMIFICAÇÃO COMO MATERIAL DIDÁTICO NO ENSINO PROFISSIONALIZANTE",
+      "authors": [
+        "Sintya de Santis Ascencio",
+        "Munique Silva de Lima",
+        "Juan Miller Viana Ramos da Silva",
+        "Emilio Rafael Bueno da Silva Paiva"
+      ]
+    },
+    {
+      "code": "MDIS-03",
+      "title": "IDENTIFICAÇÃO DOS INDICADORES DE SUSTENTABILIDADE EM CIDADES INTELIGENTES: RESULTADOS",
+      "authors": [
+        "Sintya de Santis Ascencio",
+        "Munique Silva de Lima",
+        "Aghatta Alegre Bakarge Valensuela",
+        "Isabella Cacho dos Santos",
+        "Julia Francisco da Cunha"
+      ]
+    },
+    {
+      "code": "MDIS-04",
+      "title": "IMPRESSÃO EM 3D DE UM JOGO DE DOMINÓ DO SISTEMA SANGUÍNEO",
+      "authors": [
+        "Mariana Aparecida Soares",
+        "Ygo Aquino Brito",
+        "Elivelton da Silva Moreira",
+        "Luiz Henrique Jackes Rondora"
+      ]
+    },
+    {
+      "code": "MDIS-05",
+      "title": "MULHERES NA TI – OPORTUNIDADES, DESAFIOS E INCLUSÃO DIGITAL NO MUNDO DO TRABALHO COM O USO DA FERRAMENTA POWER QUERY EM PLANILHAS ELETRÔNICAS",
+      "authors": ["Rosemeire Soares de Sousa", "Gabriely Oliveira Eustáquio"]
+    },
+    {
+      "code": "MDIS-06",
+      "title": "PROJETO SOLO FÉRTIL AQUIDAUANA - FERRAMENTAS DE APRENDIZAGEM TECNOLÓGICA ATIVA E INTEGRADA À COMUNIDADE PARA O ENFRENTAMENTO DA INSEGURANÇA ALIMENTAR",
+      "authors": [
+        "Tânia Mara Miyashiro Sasaki",
+        "Sidney Roberto de Sousa",
+        "Guilherme Gabriel da Silva Simão",
+        "Paulo Henrique Rodrigues Corrêa",
+        "Luiz Otavio Matias Ribeiro",
+        "Rayssa Casanova Montero"
+      ]
+    }
+  ]
+}
